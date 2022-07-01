@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bc.promote.mapper.eportal.EportalUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.bc.promote.entity.eportal.EportalUser">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="account_name" column="account_name" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="SMALLINT"/>
+            <result property="source_remark" column="source_remark" jdbcType="VARCHAR"/>
+            <result property="company_code" column="company_code" jdbcType="VARCHAR"/>
+            <result property="remark" column="remark" jdbcType="VARCHAR"/>
+            <result property="modified_date" column="modified_date" jdbcType="TIMESTAMP"/>
+            <result property="modified_user" column="modified_user" jdbcType="VARCHAR"/>
+            <result property="created_date" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="created_user" column="created_user" jdbcType="VARCHAR"/>
+            <result property="is_delete" column="is_delete" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,account_name,
+        password,email,mobile,
+        status,source_remark,company_code,
+        remark,modified_date,modified_user,
+        created_date,created_user,is_delete
+    </sql>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bc.promote.mapper.eportal.EportalUserPermissionMapper">
+
+    <resultMap id="BaseResultMap" type="com.bc.promote.entity.eportal.EportalUserPermission">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="user_id" column="user_id" jdbcType="BIGINT"/>
+            <result property="resource_id" column="resource_id" jdbcType="BIGINT"/>
+            <result property="modified_date" column="modified_date" jdbcType="TIMESTAMP"/>
+            <result property="modified_user" column="modified_user" jdbcType="VARCHAR"/>
+            <result property="created_date" column="created_date" jdbcType="TIMESTAMP"/>
+            <result property="created_user" column="created_user" jdbcType="VARCHAR"/>
+            <result property="is_delete" column="is_delete" jdbcType="SMALLINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,resource_id,
+        modified_date,modified_user,created_date,
+        created_user,is_delete
+    </sql>
+</mapper>
